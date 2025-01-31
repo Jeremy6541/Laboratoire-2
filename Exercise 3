@@ -1,0 +1,4 @@
+def fonction (a,b):
+        c = a + b #calcul effectué par la fonction
+        return c  #Retour résultat afficher à l'appelle de la fonction
+print(fonction(3,4))
