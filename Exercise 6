@@ -1,0 +1,3 @@
+nombre = input("Entrez un nombre : ")
+resultat = int(nombre) * 2
+print("Le double de votre nombre est :", resultat)
