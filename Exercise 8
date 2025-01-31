@@ -1,0 +1,11 @@
+def addition(a, b):#Attribution du role de la fonction
+    resultat = a + b
+    return resultat
+
+#Entrer des valeurs à additionner
+x = 5 
+y = 3
+
+#Affichage du résultat final
+z = addition(x, y)
+print("Résultat:", z)
