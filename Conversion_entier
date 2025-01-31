@@ -1,0 +1,8 @@
+#ajout de la valeur par utilisateur
+print("entrer un nombre entier.")
+x = input()
+print("valeur entré = ", x)
+
+#conversion en nombre entier et flottant
+print("valeur entiere =", int(x))
+print("valeur flottante =", float(x))
