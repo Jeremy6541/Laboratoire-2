@@ -1,0 +1,6 @@
+'''Le schema UML présenté démontre le fonctionnement de présummement
+    un grille pain qui vérifie si la tranche de pain est suffisament 
+    cuite à partir de la température.  Si la tranche n'est pas suffisament
+    cuite, il va voir la température qui si est trop basse(moins 20 degree), 
+    déclenche le chauffage pendant 10sec puis reconfirme le tout 
+    jusqu'à ce que le bon résulat survienne pour sortir de la boucle.'''
