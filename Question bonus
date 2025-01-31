@@ -1,0 +1,21 @@
+Dollar = 1
+Yen = 2
+Sterling = 3
+
+#demande de la somme d'argent
+print("Veuillez entrer la somme d'argent à convertir:")
+x = float(input())
+print("veuillez choisir la devise souhaité: 1) Dollar, 2) Sterling, 3) Yen")
+
+a = int(input())
+if a == 1:#taux échange Dollar
+    r = x * 1.51
+
+elif a == 2:#taux échange Livre sterling
+  r = x * 0.84   
+
+elif a == 3:#taux échange Yen
+ r = x * 160.94
+
+
+print("le nouveau montant est:", r)
