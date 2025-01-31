@@ -9,3 +9,5 @@ y = 3
 #Affichage du résultat final
 z = addition(x, y)
 print("Résultat:", z)
+
+#Il y avait des guillemets de chaque côté du chiffre 5 ce qui faisaiten sorte que python le voyait comme une str"
