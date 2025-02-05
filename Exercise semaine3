@@ -1,0 +1,10 @@
+Donnée = "jeremy"
+print("entrer un nom :")
+
+a = str(input())
+mot_de_passe = int(input())
+if a == str("jeremy") and int(mot_de_passe) == 6541 :
+    print("bienvenu Jérémy")
+
+else:
+    print("accès refusé")   

@@ -1,0 +1,86 @@
+#inventaire
+potion_soin = int(0)
+Couteau_de_lancer = int(0)
+kit_crochetage = int(0)
+vie = 1
+
+while vie > 0:
+    #introduction scénario
+    print("Bienvenue au royaume de Xarzaroth ! En tant que nouveau héro, vous avez pour tâche d'investiguer l'un des deux endroits que le seigneur vous propose.  Pourrez-vous y arriver ?")
+    print("Comment vous nommez vous ?")
+    Nom = str(input())
+    print("bienvenue ", Nom)
+
+
+    #Début aventure
+    print("À votre gauche se trouve une veille maison abandonné et sur votre droite l'entrée d'une forêt magique. ")
+    print("Dans quelle direction voulez-vous aller ? (D) droite (G) gauche")
+
+    #variable de déplacement
+    direction = str(input())
+    if direction == "D" :
+        print("Vous tournez à gauche et entrer dans la maison abandonné")
+        progression = 1
+
+    elif direction == "G":
+        print("Vous pénétrez dans la fôret")
+        progression = 2
+
+
+    #Deuxieme etape aventure
+    if progression == 1:
+        print("Une fois à l'intérieur, vous voyez deux corridor, l'un vers la gauche, menant à la cuisine et celui de droite, menant aux chambre")
+        progression = 3
+
+    elif progression == 2:
+        print("Une fois à l'intérieur, vous remarquez un étant à votre gauche, et un passage allant plus loin dans la fôret sur votre droite")
+        progression = 4
+
+    print("Dans quelle direction voulez-vous aller ? (D) Droite (G) Gauche")
+
+
+    #troisieme étape aventure
+    if direction == "D" and progression == 3:
+        print("vous découvrez la présence d'une banshie ayant élu domicile dans la chambre de la maison.  Que voulez vous faire ?")
+        print("(A) affronter ou (F) Fuir ")
+        progression == 5
+
+    elif direction == "G" and progression == 3:
+        print("Vous voyez dans la cuisine un mort vivant avec un tablier de cuisinier.")
+        print("(A) affronter ou (F) Fuir ")
+        progression = 5
+
+    elif direction == "G" and progression == 4:
+        print("vous voyez dans le lac une sireine qui vous sourit et vous donne une potion de soin.")
+        potion_soin + int(1)
+        print("Vous retournez en arriere et poursuivez sur l'autre chemin.")
+        progression = 4
+        direction = "D"
+
+    elif direction == "D" and progression == 4:
+        print("vous ressentez une présence vous observant et une voix dans votre tête vous disant de rebrousser chemin.")
+        print("(A) Avancer (F) Fuir")
+        progression = 6
+
+
+    #Retour au village ou mort
+    if direction == "A" and progression == 5:
+        combat = 1
+        print("La banshie est beaucoup trop forte pour vous et vous neutralize en un instant !")
+        vie = 0
+
+    elif direction == "F" and progression == 5:
+        print("Vous retournez au village pour informer le seigneur de la situation")
+        print("Félicitation, vous avez complété votre tâche!")
+
+    elif direction == "A" and progression == 5:
+        print("Le cuisinier vous vois entrer dans la cuisine et vous lance un couteau vous tuant sur le coup !")
+        vie = 0
+    
+    elif direction == "F" and progression == 5:
+        print("Vous faite marche arrière et sortez de la maison")
+        progression = 7
+    
+    elif direction == "A" and progression == 6
+    print("")
+
